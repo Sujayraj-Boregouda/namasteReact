@@ -4,9 +4,20 @@
 
 const newHeading = React.createElement('div', {id: 'newObj', class: 'main-child'}, 
 [
-React.createElement('span', {class: 'span'}, "I am Child 1"),
-React.createElement('span', {class: 'span'}, "I am Child 2")
+    React.createElement('div', {class: 'div-1'}, 
+        [
+            React.createElement('p', {class: 'child-1'}, 'child 1'),
+            React.createElement('p', {class: 'child-2'}, 'child 2')
+        ]
+    ),
+    React.createElement('div', {class: 'div-2'}, 
+        [
+            React.createElement('p', {class: 'child-3'}, 'child 3'),
+            React.createElement('p', {class: 'child-4'}, 'child 4')
+        ] 
+    )
 ]
 );
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const root =ReactDOM.createRoot(document.getElementById('root'));
 root.render(newHeading);
