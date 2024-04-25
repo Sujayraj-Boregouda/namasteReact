@@ -10,11 +10,22 @@
 
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    
-    <script>
+
+    <!-- (1) Vanilla Javascript method -->
+    <!-- <script>
         const newElement = document.createElement('h1');
         newElement.innerHTML = "Hello Sujayraj";
         document.getElementById('root').appendChild(newElement);
-    </script>
+    </script> -->
+
+    <!-- (2) React Method -->
+     <script>
+        const heading = React.createElement('h1', {id: 'head', class: 'new', category: 'Developer', weight: '68 Kg', height: '5.4 Feet'}, "Sujayraj Boregouda");
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+
+        root.render(heading);
+     </script>
+
 </body>
 </html>
