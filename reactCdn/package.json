@@ -1,0 +1,14 @@
+{
+  "name": "reactcdn",
+  "version": "1.0.0",
+  "description": "This is sujay's fun with npm",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
